@@ -1,0 +1,223 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f2f2f2;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #e38809;
+  color: white;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffd700;
+}
+
+/* Banner grande */
+
+
+
+
+.banner {
+  background: url('./img/Banner_Principal_brinquedos_cao_2\ 2.png') no-repeat center center/cover;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.banner-content {
+  background-color: rgba(0, 0, 0, 0.55);
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 800px;
+}
+
+.banner-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.banner-content p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  background-color: #ffd700;
+  color: #333;
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background-color: #e6c200;
+}
+
+/* Seções */
+section {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 30px;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  color: #2d89ef;
+  font-weight: 800;
+}
+
+/* Grid para serviços e produtos */
+.grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+  width: 300px;
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #2d89ef;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* Contato */
+#contato {
+  background: #ff9500;
+  color: white;
+  padding: 40px 30px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+#contato h2 {
+  color: #ffd700;
+  margin-bottom: 25px;
+}
+
+#contato p {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+
+/* Rodapé */
+footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 25px 10px;
+  font-size: 1rem;
+  margin-top: 50px;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  nav ul {
+    gap: 15px;
+  }
+
+  .banner-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .banner-content p {
+    font-size: 1.2rem;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .banner {
+    height: 400px;
+  }
+}
